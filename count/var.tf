@@ -1,5 +1,5 @@
 variable "instance_type" {
-    default = "t2.micro"
+    default = "t3.micro"
 }
 
 variable "ami_id" {
@@ -7,14 +7,14 @@ variable "ami_id" {
 }
 
 variable "instances" {
-    default = ["frontend", "backend", "database"]
+    default = ["ansible", "mysql", "backend" ,"frontend"]
 }
 
 variable "zone_id" {
-    default = "Z023019421FR1FZQ5H6OQ"
+    default = "Z04757596NZDGVB9VM0A"
 }
 variable "domain_name" {
-    default=  "kavyadev.shop"
+    default=  "koti.lat"
 }
 
 variable "common_tags" {
